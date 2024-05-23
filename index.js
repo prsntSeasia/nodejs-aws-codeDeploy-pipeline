@@ -20,6 +20,10 @@ app.get('/', (req, res) => {
 
 })
 
+app.get("/home",(req, res) => {
+    res.json({message:"This is home page"})
+})
+
 app.listen(port, () => {
     console.log(`[Version ${version}]: Server running at http://${hostname}:${port}/`);
 })
